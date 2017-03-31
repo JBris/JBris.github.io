@@ -4,10 +4,22 @@
   <head>
     <title>James Bristow</title>
     <meta charset="utf-8">
+
+    <!--Externally hosted-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--Internally hosted-->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-theme.min.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!--Custom-->
     <link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/js/jquery.min.js">
+
   </head>
 
 <!--==============================================================================-->
@@ -48,27 +60,220 @@
 
     <!-- START THE FEATURETTES -->
     <hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image img-circle pull-left" src="../assets/img/computer.png">
+        <h2 class="featurette-heading">Do you Require a Tutor?</h2>
+        <hr class="featurette-divider">
+        <p class="lead">I am offering introductory lessons in the following topics:</p>
+        <noscript>
+            <p class="lead">Please enable JavaScript for more information</p>
+        </noscript>
+    </div>
 
-    <div class="featurette">
-      <img class="featurette-image img-circle pull-left" src="../assets/img/computer.png">
-      <h2 class="featurette-heading">Do you Require a Tutor?</h2>
-      <hr class="featurette-divider">
-      <p class="lead">I am offering introductory lessons in the following topics:
-       <ul class="lead">
-          <li>Introductory Programming</li>
-          <li>App Development</li>
-          <li>Web Development</li>
-          <li>Database Development</li>
-          <li>Cloud Computing</li>
-          <li>Software Modelling</li>
-          <li>Version Control</li>
-          <li>Encryption and Security</li>
-        </ul>
-      </p>
-      <p class="lead">These classes are appropriate for total newcomers as well as kids who are being introduced to IT. I also offer a clear line of progression, as well as advanced classes for more experienced students. Continue reading for more information.</p>
-      <p class="lead"><a href="contact_me.html">If you are interested, please contact me to make a booking.</a></p>
+    <div class="container">
+ 
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Introductory Programming</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Learn the very fundamentals of programming while using in-demand languages like C#, Python, or Java.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: Variables and data types. Discover how to define and assign variables, and identify different data types.</li>
+                  <li>Lesson 2: Collections. Learn about collections - from arrays, to lists, to dictionaries.</li>
+                  <li>Lesson 3: Functions and subroutines. Learn about creating and calling functions and subroutines, from passing arguments to returning values.</li>
+                  <li>Lesson 4: Object Orientated Programming. Learn about classes, objects, methods, and properties</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">App Development</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Learn the very basics of application development.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: Introduction to Mobile App Development. Develop a simple mobile app using MIT App Inventor (Requires Gmail account).</li>
+                  <li>Lesson 2: Introduction to Visual Studio App Development. Develop an simple application using C# in Visual Studio.</li>
+                  <li>Lesson 3: App Development using Android Studio (Currently Unavailable). Develop a simple application using Android Studio.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Web Development</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+              <p>Learn the very basics of web development.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: HTML and CSS. Learn to create and style a web page. Build a simple website.</li>
+                  <li>Lesson 2: JavaScript. Learn to develop interactive web sites.</li>
+                  <li>Lesson 3: Launch a Website. Launch a website onto the internet using GitHub pages (Requires GitHUb account).</li>
+                  <li>Lesson 4: Advanced JavaScript. Learn about different JavaScript frameworks and AJAX.</li>
+                  <li>Lesson 5: Server-side Scripting. Learn about server-side scripting using PHP.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+            <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Database Development</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Learn the very basics of database development.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: Introduction to SQL. Learn to communicate with a database using simple SQL queries.</li>
+                  <li>Lesson 2: Introduction to Database Development. Learn to model and build a simple database.</li>
+                  <li>Lesson 3: Advanced SQL. A brief introduction to set theory. Learn more advanced SQL commands.</li>
+                  <li>Lesson 4: Applications and Databases. Learn to retreieve data from a database, and use it in an app.</li>
+                  <li>Lesson 5: Non-relational Databases (Currently Unavailable). Learn about non-relational databases using MongoDB.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Basics of Computer Science</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Learn the very basics of computer science.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: Binary. Learn all about the binary numbering system.</li>
+                  <li>Lesson 2: Hexadecimal and conversions. Learn about the hexadecimal numbering system. Learn to convert between decimal, binary, and hexadecimal.</li>
+                  <li>Lesson 3: Binary Arithmetic, Manipulation, and Masking. Learn about binary addition, subtraction, multiplication, and division. Learn to manipulate bits.</li>
+                </ul>
+              </p>
+          </div>
+        </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Introduction to Linux</a>
+            </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+            <p>Learn the very basics of the Linux operating system.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: Ubuntu. Install Ubuntu Desktop onto a virtual machine, and play around with it.</li>
+                  <li>Lesson 2: Terminal and Bash. Learn a number of simple Terminal Commands. Create a simple Bash Script.</li>
+                </ul>
+              </p>
+          </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Software Modelling</a>
+            </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>An introduction to Software Modelling.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: UML (Currently Unavailable). Learn about UML using CHEN notation and Crow's foot. Create a simple architectural plan for a client.</li>
+                  <li>Lesson 2: Class Modelling. Create a simple class diagram using Visual Studio.</li>
+                  <li>Lesson 3: Database Modelling. Create and implement a database model using MySQL.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Version Control</a>
+            </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Learn about Version Control.</p> 
+              <p>
+                <ul>
+                  <li>Lesson 1: Git and GitHub. Learn to use some simple Git commands. Save a project onto GitHub (requires GitHub account).</li>
+                </ul>
+              </p>
+          </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Security and Encryption</a>
+            </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+            <div class="panel-body">
+            <p>Learn the basics of Security and Encryption.</p> 
+             <p>
+                <ul>
+                  <li>Lesson 1: Safe Web Browsing. Receive some tips about staying safe while on the web. Learn about common methods of attack and how to avoid them. </li>
+                  <li>Lesson 2: Introduction to Encryption. Learn about the basics of encryption while using PGP.</li>
+                </ul>
+              </p>
+          </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title collapse-header lead">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Cloud Computing</a>
+            </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Receive an introduction to Cloud Computing.</p> 
+              <p>
+                <ul>
+                  <li>
+                    Lesson 1: Introduction to Cloud Computing. Learn more about the Cloud using Google Docs and Heroku.
+                  </li>
+                </ul>
+              </p>
+          </div>
+          </div>
+        </div>
+      </div> 
 
     </div>
+
+    <div>
+      <p class="lead">Introductory level classes are appropriate for total newcomers as well as kids who are being introduced to IT. I also offer a clear line of progression, as well as advanced classes for more experienced students.</p>
+      <p class="lead"><a href="contact_me.html">If you are interested, please contact me to make a booking.</a></p>
+      <p class="small">Note: Some classes may require you to run third party software on your machine. You will always be notified beforehand if this is the case, and your permission will be requested.</p>
+    </div>
+
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
