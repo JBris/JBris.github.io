@@ -11,15 +11,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-    <!--Internally hosted-->
+    <!--Internally hosted
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-theme.min.css">
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script>if (!window.jQuery) document.write('<script src="../assets/js/jquery.min.js"><\/script>');</script>
+    <script src="../assets/js/bootstrap.min.js"></script>-->
 
     <!--Custom-->
     <link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
 
+  
   </head>
 
 <!--==============================================================================-->
@@ -64,7 +65,9 @@
 
       <div class="featurette">
         <img class="featurette-image img-circle pull-left" src="../assets/img/computer.png">
-        <h2 class="featurette-heading">Do you Require a Tutor?</h2>
+        
+        <h2 class="featurette-heading">Do you Require <span class="text-muted">a Tutor?</span></h2>
+
         <hr class="featurette-divider">
         <p class="lead">I am offering introductory lessons in the following topics:</p>
         <noscript>
