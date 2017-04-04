@@ -4,22 +4,14 @@
   <head>
     <title>James Bristow</title>
     <meta charset="utf-8">
-
-    <!--Externally hosted-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <!--Internally hosted-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-theme.min.css">
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-
-    <!--Custom-->
+    <script src="../assets/js/app.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
-    
+  
   </head>
 <!--==============================================================================-->
 
@@ -27,46 +19,69 @@
 
 <body>
 
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top">
-          <div class="navbar-header">
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-            <a class="navbar-brand" href="../../index.html">Home</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="tutoring.html">Tutoring</a></li>
-                <li class="active"><a href="my_work.html">My Work</a></li>
-                <li><a href="mobile_apps.html">Mobile Apps</a></li>
-                <li><a href="about_me.html">About Me</a></li>
-                <li><a href="contact_me.html">Contact Me</a></li>
-              </ul>
-            </div>
+    <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
 
-        </div>
-      </div><!-- /container -->
-    </div><!-- /navbar wrapper -->
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+                </div>
+
+                   <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-left">
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="tutoring.html">Tutoring</a></li>
+                      <li class="active"><a href="my_work.html">My Work</a></li>
+                      <li><a href="mobile_apps.html">Mobile Apps</a></li>
+                      <li><a href="about_me.html">About Me</a></li>
+                      <li><a href="contact_me.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!--UNDER CONSTRUCTION-->
     <div class="container marketing">
-      <br>
-      <br>
-      <br>
-      <br>
+
+
       <hr class="featurette-divider">
+
 
       <div style = "text-align: center">
         <h2 class="featurette-heading">A Sample of <span class="text-muted">My Work...</span></h2>
+        <br>
+        <p class="lead"><a href="https://github.com/JBris/JBris.github.io" target="_blank">Visit GitHub to see my Source Code</a></p>
       </div>
 
       <div class="featurette">
+
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img class="img-circle" src="../assets/img/moodle.png">
+          <h2>MOODLE Demo</h2>
+          <p>A demonstration of one of my tutoring classes, organized and presented via MOODLE. Hosted on Heroku.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" target="_blank">View Demo</a></p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img class="img-circle" src="../assets/img/student-enrollment.png">
+          <h2>Student Enrollment System</h2>
+          <p>A simple student enrollment system. Developed using C# and Windows Forms. Hosted on Heroku.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" target="_blank">View Demo</a></p>
+        </div>
+      </div><!-- /.row -->
+
+    <br>
+    <br>
+    <br>
+
+
       <div class="row">
         <div class="col-md-6 text-center">
           <img class="img-circle" src="../assets/img/facebook-img.jpg">
@@ -81,7 +96,6 @@
           <p><a class="btn btn-lg btn-primary" href="#" target="_blank">View Demo</a></p>
         </div>
       </div><!-- /.row -->
-    </div>
 
     <br>
     <br>
@@ -101,6 +115,7 @@
           <p><a class="btn btn-lg btn-primary" href="#" target="_blank">View Demo</a></p>
         </div>
       </div><!-- /.row -->
+    </div>
 
       <hr class="featurette-divider">
 
@@ -108,8 +123,8 @@
       <footer>
         <p class="pull-right"><a href="#">Jump Back to top</a></p>
         <p>Email: james (dot) bristow (dot) portfolio (at) gmail (dot) com</p>
-        <p> <a href="contact_me.html">Access the Contact Form</a></p>
-        <p> <a href="https://github.com/JBris/JBris.github.io">Source Code</a></p>
+        <p> <a href="contact_me.html" target="_blank">Access the Contact Form</a></p>
+        <p> <a href="https://github.com/JBris/JBris.github.io" target="_blank">Source Code</a></p>
       <p>Created using Bootstrap 3 and Bootply for rapid deployment</p>
       </footer>
 
