@@ -118,7 +118,8 @@ export class MainMenu extends Phaser.State
         this._background.destroy();
         this._music.destroy();
         this._game.BreakoutWorld.stageManager.CurrentStage = 1;
-        this.game.state.start("Game",true, false, this._game);  
+        this.game.state.start("FinalBoss", true, false, this._game);  
+        //this.game.state.start("Game",true, false, this._game);  
     }
 
     addLeaderBoardText(): void 

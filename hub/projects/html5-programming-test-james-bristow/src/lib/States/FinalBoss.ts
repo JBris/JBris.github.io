@@ -329,8 +329,6 @@ export class FinalBoss extends Phaser.State {
             this._leftBloodyPaddle.animations.frame = 7;
             this._rightBloodyPaddle.animations.stop("float");
             this._rightBloodyPaddle.animations.frame = 7;
-            this.game.time.events.add(Phaser.Timer.SECOND * 2, this.prepareRelaunchGame, this);    
-
         } else
             this._boss.animations.add('hurt', [2, 3, 2, 3], 2, false).play(); 
 
@@ -338,6 +336,7 @@ export class FinalBoss extends Phaser.State {
         if ("vibrate" in window.navigator) { window.navigator.vibrate([100]); }
          ball.collide("boss");
      //   boss.kill();
+       // this.prepareRelaunchGame();        
     }
 
     ballCollideLeftPaddle(ball: Ball, leftPaddle: Phaser.Sprite): void {
