@@ -1,0 +1,83 @@
+<html>
+	<body>
+		<div id="mapdiv"></div>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+		<script src="https://www.openlayers.org/api/OpenLayers.js"></script>
+		<script>
+			const baseURL =
+				"https://api.openbrewerydb.org/breweries?by_state=california&per_page=50&page=";
+
+			// variable to hold the list of breweries
+			let breweries = [];
+			const pages = 19;
+
+			const getBrews = async (url, page) => {
+				const results = await axios.get(url + page).then(res => {
+					return res.data;
+				});
+				return results;
+			};
+
+			for (let i = 0; i <= pages; i++) {
+				breweries.push(getBrews(baseURL, i));
+			}
+
+			Promise.all(breweries)
+				.then(r => {
+					// console.log("R:", r); // an array of arrays
+					breweries = r;
+				})
+				.then(() => {
+					console.log("breweries:", breweries);
+					map = new OpenLayers.Map("mapdiv");
+					map.addLayer(new OpenLayers.Layer.OSM());
+
+					markersList = [];
+
+					for (let i = 0; i < breweries.length; i++) {
+						const listOfFifty = breweries[i];
+						for (let j = 0; j < listOfFifty.length; j++) {
+							if (
+								listOfFifty[j].longitude !== null &&
+								listOfFifty[j].latitude !== null
+							) {
+								let point = new OpenLayers.LonLat(
+									listOfFifty[j].longitude,
+									listOfFifty[j].latitude
+								).transform(
+									new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+									map.getProjectionObject() // to Spherical Mercator Projection
+								);
+								markersList.push(point);
+							}
+						}
+					}
+
+					var zoom = 6;
+
+					var markers = new OpenLayers.Layer.Markers("Markers");
+					map.addLayer(markers);
+
+					for (let i = 0; i < markersList.length; i++) {
+						markers.addMarker(
+							new OpenLayers.Marker(markersList[i])
+						);
+					}
+
+					var testMarker = new OpenLayers.LonLat(
+						-120.2146488,
+						35.905002
+					).transform(
+						new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+						map.getProjectionObject() // to Spherical Mercator Projection
+					);
+
+					markers.addMarker(new OpenLayers.Marker(testMarker));
+
+					map.setCenter(testMarker, zoom);
+				});
+		</script>
+		<!-- <script src="./app.js"></script> -->
+	</body>
+</html>
